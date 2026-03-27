@@ -1,0 +1,96 @@
+{
+  "configuracion": {
+    "reiniciar_puntero_al_inicio": "no",
+    "reiniciar_puntero_antes_de_cada_click": "si",
+    "delay_entre_pasos_ms": 150
+  },
+  "secciones": [
+    {
+      "descripcion": "Activar e-pedal",
+      "activo": "no",
+      "pasos": [
+        { "tipo": "esperar", "segundos": 60 },
+        { "tipo": "ir_a_home", "veces": 1 },        
+        
+        { "tipo": "click", "dx": 50, "dy": 150, "nota": "Entrar en segundo menú"},
+
+        { "tipo": "click", "dx": 300, "dy": 280, "nota": "Entrar a Configuración" },        
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+
+        { "tipo": "click", "dx": 150, "dy": 150 },
+        { "tipo": "scroll", "direccion": "arriba", "ticks": 800 },
+
+        { "tipo": "click", "dx": 150, "dy": 170 },        
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+
+        { "tipo": "click", "dx": 440, "dy": 210 },
+        { "tipo": "click", "dx": 440, "dy": 210 },
+        {
+          "tipo": "clicks",
+          "lista": [
+            { "dx": 400, "dy": 210 },
+            { "dx": 450, "dy": 250 }
+          ]
+        }
+      ]
+    },
+    {
+      "descripcion": "Activar eco+",
+      "activo": "si",
+      "pasos": [
+        { "tipo": "esperar", "segundos": 10 },
+        { "tipo": "ir_a_home", "veces": 1 },        
+        
+        { "tipo": "click", "dx": 50, "dy": 150, "nota": "Entrar en segundo menú"},
+
+        { "tipo": "click", "dx": 300, "dy": 280, "nota": "Entrar a Configuración" },        
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+
+        { "tipo": "click", "dx": 150, "dy": 150 },
+        { "tipo": "scroll", "direccion": "arriba", "ticks": 800 },
+
+        { "tipo": "click", "dx": 150, "dy": 170 },        
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+
+        { "tipo": "click", "dx": 440, "dy": 250 ,"nota": "Activa e-pedal"},
+        { "tipo": "click", "dx": 440, "dy": 210 ,"nota": "Activa eco+"},
+       
+      ]
+    },
+    {
+      "descripcion": "Desactivar Mantenimiento de carril de emergencia",
+      "activo": "no",
+      "pasos": [
+        { "tipo": "esperar", "segundos": 60 },
+        { "tipo": "ir_a_home", "veces": 1 },        
+        
+        { "tipo": "click", "dx": 50, "dy": 150, "nota": "Entrar en segundo menú"},
+
+        { "tipo": "click", "dx": 300, "dy": 280, "nota": "Entrar a Configuración" },        
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+
+        { "tipo": "click", "dx": 150, "dy": 150 },
+        { "tipo": "scroll", "direccion": "arriba", "ticks": 800 },
+
+        { "tipo": "click", "dx": 150, "dy": 250 },
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+
+        { "tipo": "click", "dx": 300, "dy": 135 ,"nota": "clic en pestaña Sistema de asistencia de avance"},
+        { "tipo": "click", "dx": 565, "dy": 135 ,"nota": "clic en pestaña Asistencia de carril"},
+        { "tipo": "click", "dx": 560, "dy": 135 ,"nota": "clic en pestaña Asistencia de carril"},        
+        { "tipo": "click", "dx": 400, "dy": 210 ,"nota": "Clic en un lugar vacio"},
+        { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
+        { "tipo": "click", "dx": 440, "dy": 210 ,"nota": "Clic en Mantenimiento de carril de emergencia"}
+      ]
+    },
+    {
+      "descripcion": "Vovler a android Auto - AppleCar Play",
+      "activo": "si",
+      "pasos": [
+        { "tipo": "esperar", "segundos": 1 },
+        { "tipo": "ir_a_home", "veces": 1 },
+        { "tipo": "click", "dx": 50, "dy": 310, "nota": "Entrar a android auto o apple car play"},
+      ]
+    }
+  ]
+}
