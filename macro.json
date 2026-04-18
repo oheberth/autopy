@@ -7,9 +7,9 @@
   "secciones": [
     {
       "descripcion": "Activar e-pedal",
-      "activo": "no",
+      "activo": "si",
       "pasos": [
-        { "tipo": "esperar", "segundos": 60 },
+        { "tipo": "esperar", "segundos": 30 },
         { "tipo": "ir_a_home", "veces": 1 },        
         
         { "tipo": "click", "dx": 50, "dy": 150, "nota": "Entrar en segundo menú"},
@@ -36,9 +36,9 @@
     },
     {
       "descripcion": "Activar eco+",
-      "activo": "si",
+      "activo": "no",
       "pasos": [
-        { "tipo": "esperar", "segundos": 10 },
+        { "tipo": "esperar", "segundos": 3 },
         { "tipo": "ir_a_home", "veces": 1 },        
         
         { "tipo": "click", "dx": 50, "dy": 150, "nota": "Entrar en segundo menú"},
@@ -53,7 +53,7 @@
         { "tipo": "scroll", "direccion": "abajo", "ticks": 800 },
 
         { "tipo": "click", "dx": 440, "dy": 250 ,"nota": "Activa e-pedal"},
-        { "tipo": "click", "dx": 440, "dy": 210 ,"nota": "Activa eco+"},
+        { "tipo": "click", "dx": 440, "dy": 210 ,"nota": "Activa eco+"}
        
       ]
     },
@@ -84,12 +84,26 @@
       ]
     },
     {
+      "descripcion": "Ativar massagem motorista baixo",
+      "activo": "si",
+      "pasos": [
+        { "tipo": "esperar", "segundos": 8 },
+        { "tipo": "ir_a_home", "veces": 1 },
+        { "tipo": "esperar", "segundos": 1 },
+        { "tipo": "click", "dx": 50, "dy": 260, "nota": "Entrar no clima" },
+        { "tipo": "esperar", "segundos": 2 },
+        { "tipo": "click", "dx": 155, "dy": 245, "nota": "Entrar em Bancos" },
+        { "tipo": "esperar", "segundos": 2 },
+        { "tipo": "click", "dx": 310, "dy": 285, "nota": "Massagem motorista - Baixo" }
+      ]
+    },
+    {
       "descripcion": "Vovler a android Auto - AppleCar Play",
       "activo": "si",
       "pasos": [
         { "tipo": "esperar", "segundos": 1 },
         { "tipo": "ir_a_home", "veces": 1 },
-        { "tipo": "click", "dx": 50, "dy": 310, "nota": "Entrar a android auto o apple car play"},
+        { "tipo": "click", "dx": 50, "dy": 310, "nota": "Entrar a android auto o apple car play"}
       ]
     }
   ]
