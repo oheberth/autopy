@@ -1229,12 +1229,4 @@ Some interesting future extensions could be:
 
 ## 19. License
 
-You can publish this project under the license you prefer.
-
-Common options:
-
-- **MIT** if you want maximum simplicity;
-- **Apache-2.0** if you want a more explicit license;
-- **GPL** if you want derivative work to remain under the same license.
-
-If you do not have a strong preference yet, **MIT** is usually a good choice for a project like this.
+MIT
